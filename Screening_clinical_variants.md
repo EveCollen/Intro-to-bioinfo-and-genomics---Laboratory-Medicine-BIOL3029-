@@ -48,7 +48,7 @@ As more variants get described in better resolution each year, and as we underst
 
 Today we will be looking at four patients, who I have anonymised to Patient A, Patient B, Patient C and Patient D. There is a bonus Patient E, who has not been reported out, and you will eventually find out why. 
 
-Patients A,B,C and D have had real diagnostic reports issued out for them, and you can have a look at the anonymised versions here (you might need to click on 'View raw' to download): [DPYD patient reports](images_and_refs/Patient_reports.docx)
+Patients A,B,C and D have had real diagnostic reports issued out for them, and you can have a look at the anonymised versions here: [DPYD patient reports](images_and_refs/Patient_reports.docx)
 
 
 ### 1.4 A note on variant naming 
