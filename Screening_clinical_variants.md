@@ -120,7 +120,7 @@ If you remember from the lecture - the throughput of NGS samples going through c
 One way is to separate the sample into two, right at the beginning when the lab first receives the sample. The first part of the sample goes through the normal testing process, and we generate data for it. The counterpart goes through a completely independent workflow, where we target just a handful of common SNPs.
 
 
-```mermaid
+<div class="mermaid">
 flowchart TD
     A[Sample Received at Lab]
 
@@ -136,7 +136,12 @@ flowchart TD
 
     G -->|Yes| H[Confirm Identity]
     G -->|No| I[Flag Discrepancy / Investigate]
-```
+
+</div>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
 
 Let's start by looking at the results of running a fingerprint check for Patient A. The counterpart vcfs we will be checking against have been produced completely indepedently from our diagnostic vcfs (so they won't have any variants in the DPYD gene). 
 
