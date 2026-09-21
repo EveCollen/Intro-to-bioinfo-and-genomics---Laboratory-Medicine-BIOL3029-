@@ -48,7 +48,7 @@ As more variants get described in better resolution each year, and as we underst
 
 Today we will be looking at four patients, who I have anonymised to Patient A, Patient B, Patient C and Patient D. There is a bonus Patient E, who has not been reported out, and you will eventually find out why. 
 
-Patients A,B,C and D have had real diagnostic reports issued out for them, and you can have a look at the anonymised versions here. [DPYD patient reports](images_and_refs/Patient_reports.docx)
+Patients A,B,C and D have had real diagnostic reports issued out for them, and you can have a look at the anonymised versions here (you might need to click on 'View raw' to download): [DPYD patient reports](images_and_refs/Patient_reports.docx)
 
 
 ### 1.4 A note on variant naming 
@@ -57,7 +57,7 @@ There are a few standards that allow us to name variants in a standardised way s
 
 RsIDs are one way - where each variant is given a number, called is rsID number. These are usually used for SNVs.
 
-HGVS is the most accepted clinical standard - there's a few different ways to do it which later if you have time, you can browse through: [HGVS nomenclature:](https://hgvs-nomenclature.org/stable/recommendations/DNA/substitution/)
+HGVS is the most accepted clinical standard - there's a few different ways to do it which later if you have time, you can browse through: [HGVS nomenclature](https://hgvs-nomenclature.org/stable/recommendations/DNA/substitution/)
 
 For example, below you see first the transcript, and then the position in the cDNA (base 9345), and the G has been substituted with a T:
 
@@ -69,7 +69,7 @@ The DPYD gene is responsible for generating the dihydropyrimidine dehydrogenase 
 
 It's very important to optimise the variant-tailored dosage, as the standard dose that is effective for some people can be fatal for certain variant carriers. Severe toxicity to these drugs occurs in about 10% to 40% of patients, and around 7% of Europeans carry some variant that impairs function. In South Australia, there has unfortunately been a recorded case of patient fatality due to DPD enzyme deficiency and an incorrectly tailored dosage for that patient's genotype (i.e., it was assumed that the patient carried the most common genotypes, for which metabolising the drug at the prescribed dosage would have been fine).
 
-This kind of testing really highlights the importance of QC and making sure every variant that gets reported out for our patients is as close as possible to accurate as possible. We do everything in our power to keep the margins of error as low as we can, to promote the best patient outcomes.
+This kind of testing really highlights the importance of QC and making sure every variant that gets reported out for our patients is as close to accurate as possible. We do everything in our power to keep the margins of error as low as we can, to promote the best patient outcomes.
 
 
 ![alt text](images_and_refs/dpyd2.jpg)
@@ -85,6 +85,7 @@ Depending on the configuration of variant alleles, and whether those alleles hav
 
 [DPYD patient reports](images_and_refs/Patient_reports.docx)
 
+**Questions:**
 
 1.  Referring to the DPYD metabolism table, what DYPD phenotype would be given to a patient who has 1 normal function allele and 1 decreased function - i.e., would you classify their phenotype as normal, intermediate or poor?
 2. Skimming through the DYPD patient reports, which patient actually has TWO different decreased function variants that are both classified as poor metabolisers? 
