@@ -1,0 +1,5 @@
+Warning: allele frequency for homozygous variant is low are 0.854, cut-off is 0.9
+Sample_name	number_homozygous_SNPs_low_VAF	Contamination_status
+Patient_A	1	OK
+
+

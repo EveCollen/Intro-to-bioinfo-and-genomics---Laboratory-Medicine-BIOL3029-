@@ -1,0 +1,1 @@
+Sample	Variant	ChrPos	Ref	Alt	GT	FILTER	FT	AF	DP

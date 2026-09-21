@@ -1,0 +1,10 @@
+## htsjdk.samtools.metrics.StringHeader
+# CheckFingerprint --INPUT 1_vcfs/Patient_D.vcf.gz --SUMMARY_OUTPUT 3_reports/1_fingerprint_check/Patient_D.fingerprint_summary.tsv --DETAIL_OUTPUT 3_reports/1_fingerprint_check/Patient_D.fingerprint_detailMetrics.tsv --GENOTYPES 1_vcfs/counterpart_vcfs/Patient_D_counterpart.gatk.hg38.vcf.gz --HAPLOTYPE_MAP 4_refs/HaplotypeMap.vcf --GENOTYPE_LOD_THRESHOLD 0.0 --REFERENCE_SEQUENCE 4_refs/Homo_sapiens_assembly38.fasta --IGNORE_READ_GROUPS false --EXIT_CODE_WHEN_EXPECTED_SAMPLE_NOT_FOUND 1 --EXIT_CODE_WHEN_NO_VALID_CHECKS 2 --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 2 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+## htsjdk.samtools.metrics.StringHeader
+# Started on: Sun May 10 22:34:44 ACST 2026
+
+## METRICS CLASS	picard.analysis.FingerprintingSummaryMetrics
+READ_GROUP	SAMPLE	LL_EXPECTED_SAMPLE	LL_RANDOM_SAMPLE	LOD_EXPECTED_SAMPLE	HAPLOTYPES_WITH_GENOTYPES	HAPLOTYPES_CONFIDENTLY_CHECKED	HAPLOTYPES_CONFIDENTLY_MATCHING	HET_AS_HOM	HOM_AS_HET	HOM_AS_OTHER_HOM
+	Patient_D	-21.152578	-42.160821	21.008243	56	56	56	0	0	0
+
+

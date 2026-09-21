@@ -1,0 +1,4 @@
+Sample_name	number_homozygous_SNPs_low_VAF	Contamination_status
+Patient_D	0	OK
+
+
