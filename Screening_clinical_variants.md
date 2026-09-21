@@ -282,12 +282,12 @@ Bcftools only calls a variant at one of the 5 screening 'hotspot' positions, and
 [outputs/3_varcall_check/Patient_A_bcftools_check.vcf](outputs/3_varcall_check/Patient_A_bcftools_check.vcf)
 
 **Question:**
-1.  We know that Patient A has a variant at chr1, position 97573863, c.2846A>T. Can you see if the output from BCFtools has confirmed that the called variant we put in the report is correct?
+1.  We know that Patient A has a variant at chr1, position 97573863, c.1236G>A (note the cDNA is in reverse orientation, so we are looking for a change from C to T at this position). Can you see if the output from BCFtools has confirmed that the called variant we put in the report is correct?
 
 <details>
 <summary>Answer</summary>
 
-1. Yes, we can see BCFtools has called this variant in the vcf it produced!
+1. Yes, we can see BCFtools has called this variant in the vcf it produced on the last line of the vcf: chr1	97573863	.	C	T
 
 </details>
 
