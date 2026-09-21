@@ -315,7 +315,8 @@ bash ./DPYD_mini_pipeline.sh Patient_A.vcf Patient_B.vcf Patient_C.vcf Patient_D
 
 This script goes through my vcfs and automatically generates an excel file with some crisp formatting:
 
-Report_for_DPYD_variants.xlsx
+[Report_for_DPYD_variants.xlsx](https://github.com/EveCollen/Intro-to-bioinfo-and-genomics---Laboratory-Medicine-BIOL3029-/tree/main/outputs/Report_for_DPYD_variants.xlsx)
+
 
 You can see that we've coloured some of the cells green/red based on if they pass/fail some QC thresholds:
 
