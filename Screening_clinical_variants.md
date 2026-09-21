@@ -63,7 +63,7 @@ For example, below you see first the transcript, and then the position in the cD
 
 NG_012232.1:c.9345G>T
 
-## **2. DPYD pharmocogenomic screening **
+## 2. DPYD pharmocogenomic screening
 
 The DPYD gene is responsible for generating the dihydropyrimidine dehydrogenase (DPD) enzyme, which plays a key role in the metabolism of toxic compounds. Deficiency in this enzyme can cause fatal toxicity to fluoropyrimidine chemotherapy treatments (e.g., 5-fluorouracil, capecitabine), which are widely used in the treatment of solid tumour cancers. Certain variants in the DPYD gene can impair functionality in the DPD enzyme's function. Depending on the impact of the variant on the metabolism activity of the enzyme, variants categorised into zero, decreased, or normal function. 
 
@@ -107,10 +107,10 @@ Depending on the configuration of variant alleles, and whether those alleles hav
 </details>
 
 
-## **3. For any clinical testing - quality control is a must! **
-`
+## 3. Ensuring sample integrity
 
-### 3.1 Screening many patient samples and maintaining sample integrity
+
+### 3.1 Doing a fingerprint check
 
 For every patient sample we receive, it needs to undergo a huge amount of QC checks at every level - e.g. does the sample have genetic attributes that we expect, has the sequencing performed to an acceptable standard, does the sample have enough quantity and quality of data, have the variants been called correctly?
 
@@ -170,7 +170,7 @@ Negative Value: The counterpart sample does not match the primary sample, indica
 Near Zero: Inconclusive result, usually due to low coverage or non-informative genotypes.
 
 
-### 3.2 Checking sample integrity output
+### 3.2 Checking fingerprint check output
 
 We ran the above command on all 5 of our patient samples here - Patient A, B, C, D and E.
 
@@ -208,9 +208,9 @@ Patient_E -216.23926626114772 <br>
 </details>
 
 
-## **4. Errors with sample contamination**
+## 4. Errors with sample contamination
 
-### 4.1 Checking for any evidence of contamination
+### 4.1 Checking for any evidence of contamination with low VAFs
 
 Now that we have verified that all the samples are correctly identified and that no swaps have occured, another thing we can check is whether there is any evidence of low-level contamination. Remember that germline SNPs should usually only ever sit around 1 or 0.5 in frequency - since people inherit either 100% from both parents or 50% of two different alleles from either parent. If you see variants with VAFs that skew very far from 1.0 or 0.5, it could be because there are reads from other patients contaminating the sample and making up the other portion of the allele fraction.
 
@@ -246,7 +246,7 @@ I ran my python script on all 5 of our patients, and now we can look at the outp
 </details>
 
 
-## **5. Errors with variant calling**
+## 5. Errors with variant calling
 
 ### 5.1 Run bcftools as a second variant caller check 
 
@@ -291,7 +291,7 @@ Bcftools only calls a variant at one of the 5 screening 'hotspot' positions, and
 </details>
 
 
-## **6. Checking QC holistically across samples**
+## 6. Checking QC holistically across samples
 
 ### 6.1 Outputting QC reports to summarise pass/fail
 
