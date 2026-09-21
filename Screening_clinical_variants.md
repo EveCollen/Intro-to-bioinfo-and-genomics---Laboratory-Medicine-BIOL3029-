@@ -55,7 +55,7 @@ Patients A,B,C and D have had real diagnostic reports issued out for them, and y
 
 There are a few standards that allow us to name variants in a standardised way so clinicians, bioinformaticians, lab staff, medical scientists can all speak the same language. 
 
-RsIDs are one way - where each variant is given a number, called is rsID number. These are usually used for SNVs.
+RsIDs are one way - where each variant is given a number, called its rsID number. These are usually used for SNVs.
 
 HGVS is the most accepted clinical standard - there's a few different ways to do it which later if you have time, you can browse through: [HGVS nomenclature](https://hgvs-nomenclature.org/stable/recommendations/DNA/substitution/)
 
@@ -334,12 +334,16 @@ fingerprint check - must be a positive LOD
 
 2. What things have gone wrong for Patient E? Would you report out this sample? 
 
+3. Why doesn't Patient D have any QC info in the QC summary?
+
 <details>
 <summary>Answer</summary>
 
 1. Yes, all their QC checks passed!<br>
 
 2. Patient E has got screwed up metrics for each category - definitely this could not be reported out!
+
+3. Because there no diagnostic variant was found for Patient D - so we don't have any QC info for it. For best practice though, in the real world we would still check the fingerprint and contamination checks 
 </details>
 
 ## Concluding remarks
