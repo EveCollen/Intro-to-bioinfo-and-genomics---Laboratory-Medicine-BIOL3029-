@@ -185,7 +185,9 @@ Near Zero: Inconclusive result, usually due to low coverage or non-informative g
 
 We ran the above command on all 5 of our patient samples here - Patient A, B, C, D and E.
 
-Have a look at their results in the output folder: [outputs/1_fingerprint_check](https://github.com/EveCollen/Intro-to-bioinfo-and-genomics---Laboratory-Medicine-BIOL3029-/tree/main/outputs/1_fingerprint_check/). You will see they are all called Patient_{x}.fingerprint_summary.tsv. The main value you're looking is the LL_EXPECTED_SAMPLE column, which should be the number at the bottom of each output, fourth from the left. 
+Have a look at their results in the output folder: [outputs/1_fingerprint_check](https://github.com/EveCollen/Intro-to-bioinfo-and-genomics---Laboratory-Medicine-BIOL3029-/tree/main/outputs/1_fingerprint_check/). 
+
+You will see they are all called Patient\_{x}.fingerprint_summary.tsv. The main value you're looking is the LL_EXPECTED_SAMPLE column, which should be the number at the bottom of each output, fourth from the left. 
 
 
 **Questions:**
