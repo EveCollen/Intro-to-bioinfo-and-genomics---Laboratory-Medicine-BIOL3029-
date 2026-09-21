@@ -146,6 +146,11 @@ flowchart TD
 Let's start by looking at the results of running a fingerprint check for Patient A. The counterpart vcfs we will be checking against have been produced completely indepedently from our diagnostic vcfs (so they won't have any variants in the DPYD gene). 
 
 
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+</script>
+
 <pre class="mermaid">
 flowchart TD
     A1[Patient_A.vcf.gz - diagnostic variants]
