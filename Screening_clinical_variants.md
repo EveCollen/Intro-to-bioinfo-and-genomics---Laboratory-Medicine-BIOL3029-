@@ -36,8 +36,11 @@ As more variants get described in better resolution each year, and as we underst
 
 <details>
 <summary>Answers</summary>
-1. Yes, there's a list of oncology medications on page 4.
+
+1. Yes, there's a list of oncology medications on page 4. <br>
+
 2. Exome sequences 2% of the genome, genome is the full 3 billion base pairs - these are too big! It would be better to do a small hotspot amplicon test that amplifies each of the specific variant sites.
+
 </details>
 
 
@@ -92,10 +95,15 @@ Depending on the configuration of variant alleles, and whether those alleles hav
  
 <details>
 <summary>Answers</summary>
-1. Their DYPD phenotype would be classified 'Intermediate metaboliser'
-2. Patient B has two variants
-3. Probably at least a minimum dosage or even an alternative therapy
-4. False, Patient C has a heterozygous variant c.2846A>T
+
+1. Their DYPD phenotype would be classified 'Intermediate metaboliser' <br>
+
+2. Patient B has two variants <br>
+
+3. Probably at least a minimum dosage or even an alternative therapy <br>
+
+4. False, Patient C has a heterozygous variant c.2846A>T <br>
+
 </details>
 
 
@@ -177,18 +185,25 @@ Have a look at their results in the output folder [outputs/1_fingerprint_check](
 
 <details>
 <summary>Answers</summary>
-1. No, all of them passed except Patient E:
-Patient_A 19.548717
-Patient_B 18.665838
-Patient_C 15.562386
-Patient_D 21.008243
-Patient_E -216.23926626114772
 
-2. Patient A's lod score is 19.548717, so the chance that it is a true match would be roughly \(10^{20}\) times more likely than a random swap  
+1. No, all of them passed except Patient E: <br>
 
-3. Doing a sex check to see that the genetic sex matches expected patient sex
+Patient_A 19.548717 <br>
 
-4. Nothing - the LOD score would still be positive, as the counterpart sample would have all the same genotypes as the main sample, seeing as the swap occured prior to the counterpart sample being split off. 
+Patient_B 18.665838 <br>
+
+Patient_C 15.562386 <br>
+
+Patient_D 21.008243 <br>
+
+Patient_E -216.23926626114772 <br>
+
+
+2. Patient A's lod score is 19.548717, so the chance that it is a true match would be roughly \(10^{20}\) times more likely than a random swap  <br>
+
+3. Doing a sex check to see that the genetic sex matches expected patient sex <br>
+
+4. Nothing - the LOD score would still be positive, as the counterpart sample would have all the same genotypes as the main sample, seeing as the swap occured prior to the counterpart sample being split off. <br>
 
 </details>
 
@@ -225,7 +240,9 @@ I ran my python script on all 5 of our patients, and now we can look at the outp
 
 <details>
 <summary>Answer</summary>
+
 1. No, all of them passed except for again Patient E, which has 8 variants with low vaf. Perhaps something is wrong with that sample! 
+
 </details>
 
 
@@ -268,7 +285,9 @@ Bcftools only calls a variant at one of the 5 screening 'hotspot' positions, and
 
 <details>
 <summary>Answer</summary>
+
 1. Yes, we can see BCFtools has called this variant in the vcf it produced!
+
 </details>
 
 
@@ -303,7 +322,9 @@ fingerprint check - must be a positive LOD
 
 <details>
 <summary>Answer</summary>
-1. Yes, all their QC checks passed!
+
+1. Yes, all their QC checks passed!<br>
+
 2. Patient E has got screwed up metrics for each category - definitely this could not be reported out!
 </details>
 
