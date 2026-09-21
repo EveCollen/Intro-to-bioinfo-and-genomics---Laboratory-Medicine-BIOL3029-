@@ -142,8 +142,8 @@ Let's start by looking at the results of running a fingerprint check for Patient
 
 ```mermaid
 flowchart TD
-    A1[Patient_A.vcf.gz (diagnostic variants)]
-    A2[Patient_A_counterpart.gatk.hg38.vcf.gz (contains 72 fingerprinting SNPs)]
+    A1[Patient_A.vcf.gz - diagnostic variants]
+    A2[Patient_A_counterpart.gatk.hg38.vcf.gz - contains 72 fingerprinting SNPs]
 
     A1 --> F[Check SNPs match with GATK check fingerprint]
     A2 --> F
