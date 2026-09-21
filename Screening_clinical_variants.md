@@ -146,14 +146,14 @@ flowchart TD
 Let's start by looking at the results of running a fingerprint check for Patient A. The counterpart vcfs we will be checking against have been produced completely indepedently from our diagnostic vcfs (so they won't have any variants in the DPYD gene). 
 
 
-```mermaid
+<pre class="mermaid">
 flowchart TD
     A1[Patient_A.vcf.gz - diagnostic variants]
     A2[Patient_A_counterpart.gatk.hg38.vcf.gz - contains 72 fingerprinting SNPs]
 
     A1 --> F[Check SNPs match with GATK check fingerprint]
     A2 --> F
-```
+</pre>
 
 With the fingerprint checking command, we compare the main vcf of Patient A - that contains all the diagnostic data (Patient_A.vcf.gz) to its fingerprinting counterpart vcf (Patient_A_counterpart.gatk.hg38.vcf.gz). The counterpart vcf only contains 76 SNPs (single nucleotide polymorphisms). A reminder that SNPs are like 'hotspots' of variation in the human genome, so most people will carry some variance at these positions. If we find that the variance in both vcfs across these 76 SNPs is close to identical - barring some noise - then we know with confidence that the data we are looking at indeed belongs to Patient A, and the sample integrity check passes. 
 
@@ -167,7 +167,7 @@ gatk CheckFingerprint -R 4_refs/Homo_sapiens_assembly38.fasta -I Patient_A.vcf.g
 
 In the output file, we can find the LOD score for Patient_A: LOD = 19.548716624813856. 
 
-[Patient A fingerprinting output](outputs/1_fingerprint_check/Patient_A.fingerprint_summary.tsv)
+[Patient A fingerprinting output](https://github.com/EveCollen/Intro-to-bioinfo-and-genomics---Laboratory-Medicine-BIOL3029-/tree/main/outputs/1_fingerprint_check/Patient_A.fingerprint_summary.tsv)
 
 
 The LOD score, or LL_EXPECTED_SAMPLE (log-likelihood) in the output, is the core metric in this output. It represents the base-10 logarithm of the likelihood that, based on genotype similarity of the SNPs, the counterpart sample is an identical match to the primary sample, versus a random sample.
@@ -180,7 +180,7 @@ Near Zero: Inconclusive result, usually due to low coverage or non-informative g
 
 We ran the above command on all 5 of our patient samples here - Patient A, B, C, D and E.
 
-Have a look at their results in the output folder [outputs/1_fingerprint_check](outputs/1_fingerprint_check/) - you will see they are all called Patient_{x}.fingerprint_summary.tsv. The main value you're looking is the LL_EXPECTED_SAMPLE column, which should be the number at the bottom of each output, fourth from the left. 
+Have a look at their results in the output folder [outputs/1_fingerprint_check](https://github.com/EveCollen/Intro-to-bioinfo-and-genomics---Laboratory-Medicine-BIOL3029-/tree/main/outputs/1_fingerprint_check/) - you will see they are all called Patient_{x}.fingerprint_summary.tsv. The main value you're looking is the LL_EXPECTED_SAMPLE column, which should be the number at the bottom of each output, fourth from the left. 
 
 
 **Questions:**
@@ -238,7 +238,7 @@ Since there's only 1, and it's not too far off from 0.9, we're not concerned abo
 
 I ran my python script on all 5 of our patients, and now we can look at the output together: 
 
- [outputs/2_contam_check](outputs/2_contam_check/)
+ [outputs/2_contam_check](https://github.com/EveCollen/Intro-to-bioinfo-and-genomics---Laboratory-Medicine-BIOL3029-/tree/main/outputs/2_contam_check/)
 
 
 **Question:**
@@ -284,7 +284,7 @@ bcftools mpileup --count-orphans --no-BAQ \
 Bcftools only calls a variant at one of the 5 screening 'hotspot' positions, and produces a vcf:
 
 
-[outputs/3_varcall_check/Patient_A_bcftools_check.vcf](outputs/3_varcall_check/Patient_A_bcftools_check.vcf)
+[outputs/3_varcall_check/Patient_A_bcftools_check.vcf](https://github.com/EveCollen/Intro-to-bioinfo-and-genomics---Laboratory-Medicine-BIOL3029-/tree/main/outputs/3_varcall_check/Patient_A_bcftools_check.vcf)
 
 **Question:**
 1.  We know that Patient A has a variant at chr1, position 97573863, c.1236G>A (note the cDNA is in reverse orientation, so we are looking for a change from C to T at this position). Can you see if the output from BCFtools has confirmed that the called variant we put in the report is correct?
